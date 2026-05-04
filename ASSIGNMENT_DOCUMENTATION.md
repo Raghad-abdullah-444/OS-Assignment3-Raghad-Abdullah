@@ -1,6 +1,6 @@
 # Assignment 3 - Complete Documentation
 
-**Student Name**: [Your Full Name]  
+**Student Name**: Raghad Abdullah Alharbi
 **Student ID**: [Your ID]  
 **Date Submitted**: [Submission Date]
 
