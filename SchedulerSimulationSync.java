@@ -30,6 +30,7 @@ class Colors {
 class SharedResources {
     Semaphore sem;
     ReentrantLock Lock;
+    // I identifiy the locks to manage acess 
     public static final ReentrantLock contextSwitchLock=new ReentrantLock();
     public static final ReentrantLock completedProcessLock=new ReentrantLock();
     public static final ReentrantLock WaitingTimeLock=new ReentrantLock();
