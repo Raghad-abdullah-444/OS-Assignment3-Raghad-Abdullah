@@ -89,7 +89,7 @@ class SharedResources {
 }
 
 // Class representing a process that implements Runnable to be run by a thread
-class Process implements Runnable {
+static class Process implements Runnable {
     private String name;
     private int burstTime;
     private int timeQuantum;
