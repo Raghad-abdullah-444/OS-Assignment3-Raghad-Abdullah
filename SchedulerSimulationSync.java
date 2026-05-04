@@ -73,7 +73,7 @@ class SharedResources {
     public static void addWaitingTime(long time) {
         WaitingTimeLock.lock();//add entry section, the lock is for waiting time
         try{
-        totalWaitingTime += time;
+        totalWaitingTime += time;//critical section
     }finally{
         WaitingTimeLock.unlock();
     }
