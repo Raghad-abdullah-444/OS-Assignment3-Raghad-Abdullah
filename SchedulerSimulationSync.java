@@ -71,7 +71,7 @@ class SharedResources {
     
     // Method to add waiting time
     public static void addWaitingTime(long time) {
-        WaitingTimeLock.lock();
+        WaitingTimeLock.lock();//add entry section, the lock is for waiting time
         try{
         totalWaitingTime += time;
     }finally{
