@@ -30,7 +30,8 @@ class Colors {
 class SharedResources {
     Semaphore sem;
     ReentrantLock Lock;
-    public static final ReentrantLock contextSwitchlock=new ReentrantLock();
+    public static final ReentrantLock contextSwitchLock=new ReentrantLock();
+     public static final ReentrantLock completedProcessLock=new ReentrantLock();
     
     public static int contextSwitchCount = 0;      // Shared counter - NEEDS PROTECTION!
     public static int completedProcessCount = 0;   // Shared counter - NEEDS PROTECTION!
