@@ -176,7 +176,7 @@ class Process implements Runnable {
             
         
         
-        }finally {
+        }finally {// release the CPU semaphore in the finally block
             SharedResources.cpuSemaphore.release();
 
        
