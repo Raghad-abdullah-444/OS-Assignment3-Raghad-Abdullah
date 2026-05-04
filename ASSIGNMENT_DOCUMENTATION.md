@@ -33,42 +33,42 @@
 
 Document your development process with **minimum 3 entries** showing progression:
 
-### Entry 1 - [Date, Time]
-**What I implemented**: 
+### Entry 1 - [Date 4 May, Time 3:30]
+**What I implemented**: open github and take the code to run on VS code
 
-**Challenges encountered**: 
+**Challenges encountered**: Nothing
 
-**How I solved it**: 
+**How I solved it**: --
 
-**Testing approach**: 
+**Testing approach**: --
 
-**Time spent**: 
-
----
-
-### Entry 2 - [Date, Time]
-**What I implemented**: 
-
-**Challenges encountered**: 
-
-**How I solved it**: 
-
-**Testing approach**: 
-
-**Time spent**: 
+**Time spent**: half hour
 
 ---
 
-### Entry 3 - [Date, Time]
-**What I implemented**: 
+### Entry 2 - [Date 4 May , Time4:00]
+**What I implemented**: add all locks with its name to manage access  
 
-**Challenges encountered**: 
+**Challenges encountered**:take some time
 
-**How I solved it**: 
+**How I solved it**: try to solve it quikly
 
-**Testing approach**: 
+**Testing approach**: --
 
-**Time spent**: 
+**Time spent**: 1hour
+
+---
+
+### Entry 3 - [Date 4 May, Time 5:00]
+**What I implemented**: I complete to put or to test locks by putting try and catch for each responsible method in the code 
+
+**Challenges encountered**: take time to to correct error and foucs on bracktes
+
+**How I solved it**: by read the code again to detecte error and ensure to solve it
+
+**Testing approach**: by using run and show the error
+
+**Time spent**:hour and hlaf
 
 ---
 
