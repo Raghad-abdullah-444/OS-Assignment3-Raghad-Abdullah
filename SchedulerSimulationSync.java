@@ -184,6 +184,7 @@ class Process implements Runnable {
             System.out.println(Colors.RED + "  ✗ " + name + " was interrupted while waiting for CPU." + Colors.RESET);
 
         }
+    }
 
     
     
