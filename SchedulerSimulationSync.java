@@ -77,9 +77,9 @@ class SharedResources {
     
     // Method to log execution
     public static void logExecution(String message) {
-        
+      
         executionLog.add(message);
-    }
+   
 }
 
 // Class representing a process that implements Runnable to be run by a thread
