@@ -28,11 +28,10 @@ class Colors {
 
 // ⚠️ SHARED RESOURCES - These need synchronization! ⚠️
 class SharedResources {
-    // TODO: Students will add synchronization mechanisms here
-    // HINT: Use ReentrantLock for mutual exclusion
-    // HINT: Use Semaphore for limiting concurrent access
+
     Semaphore sem;
     ReentrantLock Lock;
+    public 
     
     public static int contextSwitchCount = 0;      // Shared counter - NEEDS PROTECTION!
     public static int completedProcessCount = 0;   // Shared counter - NEEDS PROTECTION!
