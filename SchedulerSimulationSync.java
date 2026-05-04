@@ -28,10 +28,9 @@ class Colors {
 
 // ⚠️ SHARED RESOURCES - These need synchronization! ⚠️
 class SharedResources {
-
     Semaphore sem;
     ReentrantLock Lock;
-    public 
+    public static final ReentrantLock contextSwitchlock=new ReentrantLock();
     
     public static int contextSwitchCount = 0;      // Shared counter - NEEDS PROTECTION!
     public static int completedProcessCount = 0;   // Shared counter - NEEDS PROTECTION!
