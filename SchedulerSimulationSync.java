@@ -75,7 +75,7 @@ class SharedResources {
         try{
         totalWaitingTime += time;//critical section
     }finally{
-        WaitingTimeLock.unlock();
+        WaitingTimeLock.unlock();//exit section
     }
     }
     
