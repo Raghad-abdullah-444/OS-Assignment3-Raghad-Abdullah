@@ -224,7 +224,10 @@ class Process implements Runnable {
             System.out.println();
         } catch (InterruptedException e) {
             System.out.println(Colors.RED + "  ✗ " + name + " was interrupted." + Colors.RESET);
+        }}finally{
+            SharedResources.cpuSemaphore.release();
         }
+    
     }
     
     public String getName() {
