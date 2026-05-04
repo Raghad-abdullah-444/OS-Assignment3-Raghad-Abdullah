@@ -203,6 +203,9 @@ class Process implements Runnable {
     }
     
     public void runToCompletion() {
+      try{
+          
+      SharedResources.cpuSemaphore.acquire();
       
         try {
             System.out.println(Colors.BRIGHT_CYAN + "  ⚡ " + Colors.BOLD + Colors.CYAN + name + 
