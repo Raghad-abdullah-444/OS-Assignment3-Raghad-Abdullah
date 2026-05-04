@@ -112,8 +112,9 @@ class Process implements Runnable {
     
     @Override
     public void run() {
+       try{
+           SharedResources.cpuSemaphore.acquire();
        
-        
         try {
             if (startTime == -1) {
                 startTime = System.currentTimeMillis();
@@ -174,10 +175,14 @@ class Process implements Runnable {
             System.out.println();
             
         } finally {
-            // TODO #4: Release CPU semaphore here
-            // Always release in finally block to prevent deadlocks!
+            SharedResources.cpuSemaphore.release();
+        } catch(InterruptedException e) {
+            System.out.println(Colors.RED + "  ✗ " + name + " was interrupted while waiting for CPU." + Colors.RESET);
+
         }
     }
+
+    
     
     private String createProgressBar(int progress, int width) {
         int filled = (progress * width) / 100;
