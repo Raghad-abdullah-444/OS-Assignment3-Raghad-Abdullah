@@ -81,7 +81,7 @@ class SharedResources {
     
     // Method to log execution
     public static void logExecution(String message) {
-      logLock.lock();
+      logLock.lock();//add entry section, the lock is for log execution
       try{
         executionLog.add(message);
       }finally{
