@@ -102,13 +102,13 @@ Document your development process with **minimum 3 entries** showing progression
 
 ### Question 1: Race Conditions
 **Q**: Identify and explain TWO race conditions in the original code. For each:
-- What shared resource is affected? ContextSwitchCount resource
-- Why is concurrent access a problem? because it make wrong data by causing race condition
-- What incorrect behavior could occur? may store in ContextSwitchCount different data
+- What shared resource is affected?
+- Why is concurrent access a problem? 
+- What incorrect behavior could occur? 
 
 **Your Answer**:
 
-[Your answer here - 4-6 sentences with code examples]
+ContextSwitchCount resource will affected ,the concurrent access will be a problem because it make wrong data by causing race condition and that may store in ContextSwitchCount different data 
 
 ---
 
