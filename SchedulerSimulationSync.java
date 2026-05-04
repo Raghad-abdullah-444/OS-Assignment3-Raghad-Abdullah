@@ -58,11 +58,11 @@ class SharedResources {
     
     // Method to increment completed process counter
     public static void incrementCompletedProcess() {
-        contextSwitchLock.lock();
+        contextSwitchLock.lock();// entry section
         try{
-        completedProcessCount++;
+        completedProcessCount++;//critical section
         }finally{
-            contextSwitchLock.unlock();
+            contextSwitchLock.unlock();//exit section
         }
     }
     
