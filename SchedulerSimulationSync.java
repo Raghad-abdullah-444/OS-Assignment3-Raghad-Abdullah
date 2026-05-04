@@ -174,13 +174,16 @@ class Process implements Runnable {
             }
             System.out.println();
             
-        } finally {
+        
+        
+        }finally {
             SharedResources.cpuSemaphore.release();
-        } catch(InterruptedException e) {
+
+       
+    }}catch(InterruptedException e) {
             System.out.println(Colors.RED + "  ✗ " + name + " was interrupted while waiting for CPU." + Colors.RESET);
 
         }
-    }
 
     
     
