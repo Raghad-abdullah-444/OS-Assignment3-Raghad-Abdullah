@@ -33,7 +33,7 @@ class SharedResources {
     public static final ReentrantLock contextSwitchLock=new ReentrantLock();
     public static final ReentrantLock completedProcessLock=new ReentrantLock();
     public static final ReentrantLock WaitingTimeLock=new ReentrantLock();
-    public static final ReentrantLock logLock=new ReentrantLock();
+    public static final ReentrantLock logLock=new ReentrantLock();//collect arrayList,prevent concurrent modifaction exption in one lock
       
     
     public static int contextSwitchCount = 0;      // Shared counter - NEEDS PROTECTION!
