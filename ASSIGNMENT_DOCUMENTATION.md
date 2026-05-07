@@ -170,7 +170,7 @@ For Task 1, I used fine-grained locking with a separate lock for each counter.I 
 
 ### Critical Section #1: Counter Variables
 
-**Which variables**: 
+**Which variables**: contextSwitchCount ,completedProcessCount and totalWaitingTime
 
 **Why they need protection**: 
 
