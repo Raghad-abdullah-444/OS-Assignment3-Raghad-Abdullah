@@ -108,7 +108,16 @@ Document your development process with **minimum 3 entries** showing progression
 
 **Your Answer**:
 
-ContextSwitchCount resource will affected ,the concurrent access will be a problem because it make wrong data by causing race condition and that may store in ContextSwitchCount different data 
+the resource ContextSwitchCount is affected ,the concurrent access make big problem because if we let multiple thread to access concurrently without manage them or without coordinate betweenn them that will give/make wrong data because of thre race condition .
+this text is from my code after puting locks ,but to be clear that crirical section is always will effected if we do not manage the access
+ public static void incrementContextSwitch() {
+        contextSwitchLock.lock();// entry section
+        try{
+        contextSwitchCount++;//critical section
+        }finally{
+            contextSwitchLock.unlock();//exit section
+        }
+    }
 
 ---
 
