@@ -36,9 +36,9 @@ Document your development process with **minimum 3 entries** showing progression
 ### Entry 1 - [Date 4 May, Time 3:30]
 **What I implemented**: open github and take the code to run on VS code
 
-**Challenges encountered**: Nothing
+**Challenges encountered**: I thought that I will use the same code after updated
 
-**How I solved it**: --
+**How I solved it**: I read again the assgihmnent requirment 
 
 **Testing approach**: --
 
@@ -53,7 +53,7 @@ Document your development process with **minimum 3 entries** showing progression
 
 **How I solved it**: try to solve it quikly
 
-**Testing approach**: --
+**Testing approach**: try to put each lock and understand how to put them
 
 **Time spent**: 1hour
 
