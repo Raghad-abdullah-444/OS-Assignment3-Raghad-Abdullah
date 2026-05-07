@@ -172,13 +172,20 @@ For Task 1, I used fine-grained locking with a separate lock for each counter.I 
 
 **Which variables**: contextSwitchCount ,completedProcessCount and totalWaitingTime
 
-**Why they need protection**: 
+**Why they need protection**: Because they are shared resources accessed by multiple threads.Without protection, a Race Condition could occur, leading to incorrect calculations and data inconsistency
 
-**Synchronization mechanism used**: 
+**Synchronization mechanism used**: Fine-grained locking using ReentrantLock for each variable
 
 **Code snippet**:
 ```java
-// Paste your implementation here
+ public static void incrementCompletedProcess() {
+      completedProcessLock.lock();// entry section,the lock is for complete process
+        try{
+        completedProcessCount++;//critical section
+        }finally{
+            completedProcessLock.unlock();//exit section
+        }
+    }
 ```
 
 **Justification**: 
