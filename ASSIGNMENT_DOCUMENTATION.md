@@ -195,15 +195,22 @@ Using separate locks for each counter ensures that threads can update different 
 
 ### Critical Section #2: Execution Log
 
-**What resource**: 
+**What resource**: The executionLog which is an ArrayList<String>
 
-**Why it needs protection**: 
+**Why it needs protection**: The ArrayList class in Java is not thread-safe. If multiple threads try to add messages to the log simultaneously, it can lead to ConcurrentModificationException, data loss, or corrupted log entries
 
-**Synchronization mechanism used**: 
+**Synchronization mechanism used**: Explicit locking using a ReentrantLock (specifically logLock)
 
 **Code snippet**:
 ```java
-// Paste your implementation here
+public static void logExecution(String message) {
+      logLock.lock();//add entry section, the lock is for log execution
+      try{
+        executionLog.add(message);//critical section
+      }finally{
+        logLock.unlock();//add exit section
+      }
+}
 ```
 
 **Justification**: 
