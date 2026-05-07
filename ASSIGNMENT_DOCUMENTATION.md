@@ -294,7 +294,7 @@ my implementation successfully ensures data consistency and thread safety using 
 
 ### What I learned about synchronization:
 
-[6-8 sentences about key concepts, challenges, insights]
+Synchronization is essential for preventing data corruption and race conditions in multi-threaded apps. I learned that choosing between fine-grained and coarse-grained locks is a balance between speed and simplicity. Using ReentrantLock and Semaphore ensures that threads cooperate without crashing the system. It taught me how to manage shared resources safely while maintaining high performance.
 
 ---
 
@@ -302,15 +302,15 @@ my implementation successfully ensures data consistency and thread safety using 
 
 Give TWO examples where synchronization is critical:
 
-**Example 1**: 
+**Example 1**: Banking Apps: To prevent double-spending from the same account.
 
-**Example 2**: 
+**Example 2**: Booking Sites: To ensure a single seat isn't sold to two people.
 
 ---
 
 ### How I would explain synchronization to others:
 
-[Explain to someone who just finished Assignment 1 - use simple terms and analogies]
+It’s like a key to a single-person bathroom. Only one person (thread) can use it at a time while others wait their turn. The 'lock' prevents chaos and ensures everything stays orderly
 
 ---
 
