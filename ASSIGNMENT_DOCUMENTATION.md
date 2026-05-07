@@ -280,13 +280,13 @@ my implementation successfully ensures data consistency and thread safety using 
 ---
 
 ### Test 4: Different Scenarios
-**Scenario tested**: [e.g., different time quantum, more processes, etc.]
+**Scenario tested**: Increasing the workload by running the simulation with a much larger number of processes (e.g., 100 processes).
 
-**Purpose**: 
+**Purpose**: To see how the program handles high thread contention and to make sure that having many threads doesn't lead to performance lag or "deadlocks."
 
-**Results**: 
+**Results**: The simulation handled the 100 processes perfectly. All counters were accurate at the end, and the program didn't slow down or freeze.
 
-**What I learned**: 
+**What I learned**: I learned that fine-grained locking is very scalable. Because I used separate locks, the threads didn't spend much time waiting for each other, which allowed the system to stay fast even with a heavy workload.
 
 ---
 
