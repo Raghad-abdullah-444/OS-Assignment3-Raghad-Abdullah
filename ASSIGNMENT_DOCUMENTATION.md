@@ -128,7 +128,14 @@ this text is from my code after puting locks ,but to be clear that crirical sect
 
 **Your Answer**:
 
-[Your answer here - explain your implementation choices]
+ReentrantLock use boolean datatype while Semaphre use integer.
+Semaphre 
+A theard calls acquire()-> permit count decreases.
+A thread calls release()-> → permit count increases
+--------------------------------------------------
+ReentrantLock 
+ thread calls unlock()
+ The same thread can lock it multiple times without blocking itself.
 
 ---
 
