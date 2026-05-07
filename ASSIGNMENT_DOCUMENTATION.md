@@ -214,7 +214,7 @@ public static void logExecution(String message) {
 ```
 
 **Justification**: 
-
+using a dedicated lock for the log ensures that only one thread can modify the list at any given time. This guarantees thread safety and preserves the correct chronological order of the execution messages without interfering with other independent counters.
 ---
 
 ### Critical Section #3: CPU Semaphore
@@ -235,7 +235,7 @@ public static void logExecution(String message) {
 ```
 
 **Effect on program behavior**: 
-
+it ensures mutual exclusion during process execution, which maintains orderly console output and guarantees that timing calculations (like completion time) remain accurate.
 ---
 
 ## Part 4: Testing and Verification (2 marks)
