@@ -38,7 +38,7 @@ Document your development process with **minimum 3 entries** showing progression
 
 **Challenges encountered**: I thought that I will use the same code after updated
 
-**How I solved it**: I read again the assgihmnent requirment 
+**How I solved it**: I read again the assginmnent requirment 
 
 **Testing approach**: --
 
