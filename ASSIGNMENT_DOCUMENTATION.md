@@ -380,29 +380,29 @@ it's like a Ride-Hailing App (like Uber). You have thousands of passengers (Thre
 
 **Repository URL**: https://github.com/Raghad-abdullah-444/OS-Assignment3-Raghad-Abdullah/edit/main/ASSIGNMENT_DOCUMENTATION.md
 
-**Number of commits**: 
+**Number of commits**: 43
 
 **Commit messages**: 
-1. 
-2. 
-3. 
-4. 
+1. add changes
+2. ad static
+3. delete
+4. save changes
 
 ---
 
 ## Summary
 
-**Total time spent on assignment**: 
+**Total time spent on assignment**: 4 days 
 
 **Key takeaways**: 
-1. 
-2. 
-3. 
+1. add the laibraries
+2. add locks
+3.run code multiple time and check 
 
 **Most challenging aspect**: 
-
+detect where locks acn work after run
 **What I'm most proud of**: 
-
+I  finally learad how I can manage the thread/process 
 ---
 
 **End of Documentation**
