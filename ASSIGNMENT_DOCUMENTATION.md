@@ -249,13 +249,12 @@ it ensures mutual exclusion during process execution, which maintains orderly co
 ```
 
 **Results**: 
-(Show that running multiple times produces consistent, correct results)
-
+the output values for all counters remained identical across all five runs. There were no missing log entries, and the total execution time was calculated correctly every time.
 **Why synchronization is necessary**: 
-(Explain what race conditions COULD occur without synchronization, even if you didn't observe them. Explain which shared resources need protection and why.)
+Synchronization is required to prevent Race Conditions. Without locks, multiple threads might update 'completedProcessCount' at the same exact time, causing some updates to be lost. Also, since 'ArrayList' is not thread-safe, protection is needed to avoid program crashes during logging
 
 **Conclusion**: 
-
+my implementation successfully ensures data consistency and thread safety using fine-grained locks
 ---
 
 ### Test 2: Exception Testing
