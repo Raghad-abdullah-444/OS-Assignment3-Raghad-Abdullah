@@ -271,11 +271,11 @@ my implementation successfully ensures data consistency and thread safety using 
 ### Test 3: Correctness Verification
 **What I tested**: Verifying correct final values (total burst time, context switches, etc.)
 
-**Expected values**: 
+**Expected values**: The total number of completed processes and context switches that I calculated manually based on the input data.
 
-**Actual values**: 
+**Actual values**: The final summary displayed in the terminal at the end of the simulation run.
 
-**Analysis**: 
+**Analysis**: The actual results were exactly what I expected. This confirms that my locks didn't just prevent crashes, but also ensured that every single increment and calculation was recorded accurately without any data loss.
 
 ---
 
