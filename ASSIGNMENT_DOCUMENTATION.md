@@ -146,7 +146,10 @@ I use it with run() method
 
 **Your Answer**:
 
-[Your answer here - reference try-finally blocks, lock ordering, etc.]
+is situation where two or more threads are permanently blocked because each one is waiting for a resource held by another. 
+here in my code: SharedResources.cpuSemaphore.acquire();
+-The deadlock is caused by acquire() without a guaranteed release(), especially if an exception happens before releasing.
+
 
 ---
 
