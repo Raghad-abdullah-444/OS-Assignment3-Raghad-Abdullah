@@ -310,13 +310,12 @@ Give TWO examples where synchronization is critical:
 
 ### How I would explain synchronization to others:
 
-It’s like a key to a single-person bathroom. Only one person (thread) can use it at a time while others wait their turn. The 'lock' prevents chaos and ensures everything stays orderly
-
+it's like a Ride-Hailing App (like Uber). You have thousands of passengers (Threads) and limited cars (Resources). Synchronization is the 'system' that ensures each car takes only one passenger at a time. Without this system, two people might try to jump into the same car at once, causing chaos. The 'Lock' is the booking confirmation that prevents anyone else from using that resource until the trip is over.
 ---
 
 ## Part 6: GitHub Repository Information
 
-**Repository URL**: 
+**Repository URL**: https://github.com/Raghad-abdullah-444/OS-Assignment3-Raghad-Abdullah/edit/main/ASSIGNMENT_DOCUMENTATION.md
 
 **Number of commits**: 
 
