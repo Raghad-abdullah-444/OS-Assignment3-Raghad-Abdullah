@@ -132,10 +132,12 @@ ReentrantLock use boolean datatype while Semaphre use integer.
 *Semaphre 
 -A theard calls acquire()-> permit count decreases.
 -A thread calls release()-> → permit count increases
+I use it with run() method 
 
 *ReentrantLock 
  -thread calls unlock()
  -The same thread can lock it multiple times without blocking itself.
+ I use it with incrementCompletedProcess() method
 
 ---
 
