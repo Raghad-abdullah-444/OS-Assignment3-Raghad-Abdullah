@@ -260,11 +260,11 @@ my implementation successfully ensures data consistency and thread safety using 
 ### Test 2: Exception Testing
 **What I tested**: Checking for ConcurrentModificationException
 
-**Testing procedure**: 
+**Testing procedure**: I ran the simulation with a high number of processes to force multiple threads to write to the log at the same time. I then checked the console for any runtime errors or crashes.
 
-**Results**: 
+**Results**: The program finished without any issues. No ConcurrentModificationException occurred
 
-**What this proves**: 
+**What this proves**: It proves my logLock is doing its job. It keeps the ArrayList safe by making sure only one thread can add a message at a time, preventing the crashes that usually happen when threads collide.
 
 ---
 
