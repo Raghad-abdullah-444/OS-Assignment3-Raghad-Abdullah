@@ -219,15 +219,19 @@ public static void logExecution(String message) {
 
 ### Critical Section #3: CPU Semaphore
 
-**Purpose of semaphore**: 
+**Purpose of semaphore**: To control and limit the number of threads that can access the CPU resources at the same time, ensuring synchronized task execution
 
-**Number of permits and why**: 
+**Number of permits and why**: 1 permit. It acts as a Binary Semaphore to ensure that only one process can execute its critical section at a time, simulating a single-core CPU environment and preventing execution overlap
 
-**Where implemented**: 
+**Where implemented**: Defined in the SharedResources class and implemented within the runToCompletion() method of the Process class
 
 **Code snippet**:
 ```java
-// Paste your implementation here
+ try{
+// critical section
+           SharedResources.cpuSemaphore.acquire();
+    }   finally {// release the CPU semaphore in the finally block
+            SharedResources.cpuSemaphore.release();}
 ```
 
 **Effect on program behavior**: 
