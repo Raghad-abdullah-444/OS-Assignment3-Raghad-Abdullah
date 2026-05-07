@@ -189,6 +189,7 @@ For Task 1, I used fine-grained locking with a separate lock for each counter.I 
 ```
 
 **Justification**: 
+Using separate locks for each counter ensures that threads can update different variables simultaneously. This maximizes concurrency and prevents performance bottlenecks that would occur if a single global lock were used
 
 ---
 
