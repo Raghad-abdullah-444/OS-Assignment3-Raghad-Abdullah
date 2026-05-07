@@ -162,7 +162,7 @@ here in my code: SharedResources.cpuSemaphore.acquire();
 
 **Your Answer**:
 
-[Your answer here - explain coarse-grained vs fine-grained locking, independence of counters, concurrency implications. Show understanding of when to use each approach. 5-8 sentences expected.]
+For Task 1, I used fine-grained locking with a separate lock for each counter.I  made this choice because the counters are independent, so locking them individually prevents unnecessary delays. The main trade-off is that fine-grained locking is more complex to code but significantly improves performance. This approach provides better concurrency because it allows multiple threads to update different counters at the same time. Therefore, it is the most efficient design for handling independent shared resources
 
 ---
 
